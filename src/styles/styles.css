@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap");
+
+:root {
+  --main-font: "Work Sans", sans-serif;
+  --bg-color: #313641;
+  --text-color: rgb(245, 245, 245);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--main-font);
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  max-width: 600px;
+  padding: 2rem;
+  margin: auto;
+  height: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 2rem 0 3rem 0;
+}
+
+input {
+  font-size: 8rem;
+  max-width: 100%;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  /* background-color: var(--bg-color); */
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  color: var(--text-color);
+  margin: 2rem 0 0 0;
+  /* Invisible border to prevent input from moving */
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--text-color);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.tip-selectors-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 2rem;
+  margin: 2rem 0 0 0;
+}
+
+.tip-selectors-container button {
+  padding: 1rem;
+  font-size: 3rem;
+  border-radius: 400px;
+  border: none;
+  font-family: var(--main-font);
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+button.selected {
+  border: 1px solid var(--text-color);
+  margin: -1px;
+}
+
+button span {
+  display: block;
+}
+
+button span:last-of-type {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+p {
+  font-size: 3rem;
+  margin: 4rem 0 0 0;
+  color: rgba(245, 245, 245, 0.5);
+}
+
+p > span {
+  font-size: 5rem;
+  color: var(--text-color);
+}
