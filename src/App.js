@@ -22,7 +22,7 @@ function App() {
           console.log(valueNumber);
           setBillAmount(valueNumber);
         }}
-        autoFocus="true"
+        autoFocus={true}
       />
       <div className="tip-selectors-container">
         {tipOptions.map((option) => {
